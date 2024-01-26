@@ -1,4 +1,4 @@
 <!-- <app-task *ngFor="let task of tasks" [task]="task"  />
 <router-outlet></router-outlet> --> 
-<app-create-task (newTask)="createTask($event)"></app-create-task>
+<app-create-task (add)="createTask($event)"></app-create-task>
 <app-list-task [tasks]=tasks (deleteTasks)="deleteTasks($event)"/>

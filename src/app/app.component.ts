@@ -21,13 +21,15 @@ export class AppComponent {
 }]
 
 deleteTasks(task:Task){
-  this.tasks=this.tasks.filter((t:Task)=>t.id!==task.id)
+
+  this.tasks=this.tasks.filter((t:Task)=>task.id!=t.id)
+
 }
 
 createTask(task:any){
-  console.log('hola');
   
   task.id=this.tasks.length+1
   this.tasks.push(task)
+console.log(this.tasks)
 }
 }
